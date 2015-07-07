@@ -9,6 +9,7 @@ LIC_FILES_CHKSUM = "file://COPYING.LIB;md5=80862f3fd0e11a5fa0318070c54461ce"
 
 SRC_URI = "http://download.mono-project.com/sources/mono/mono-${PV}.tar.bz2 \
            file://dllmap-config.in.diff \
+           file://mono-nunit.patch \
           "
 
 FILESPATH =. "${FILE_DIRNAME}/mono-4.xx:"
