@@ -11,6 +11,7 @@ do_install_append() {
         cp -af ${STAGING_DIR_NATIVE}${libdir}/${PN}  ${D}${libdir}
         # AJL - Remove mscorlib.dll.so and mcs.exe.so files copied from mono-native to the mono destination
         find ${D}${libdir}/${PN} -name *.dll.so -o -name *.exe.so | xargs -i rm {}
+	ln -s mcs ${D}${bindir}/gmcs
 }
 
 SRC_URI[md5sum] = "24b6dbc02f8b69f7a30d01c962dc0c4d"
