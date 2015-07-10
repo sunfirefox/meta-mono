@@ -4,6 +4,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://COPYING;md5=9e1603e27acd337015fdfa7f7ff936c7"
 
 inherit autotools-brokensep mono
+PACKAGE_ARCH = "all"
 
 SRC_URI = "https://github.com/mono/xsp/archive/${PV}.tar.gz"
 
