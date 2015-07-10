@@ -4,6 +4,7 @@ DEPENDS = "mono"
 RDEPENDS_${PN} = "mono"
 LICENSE = "LGPLv2"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=d8c5dc22eb6f25667cf8d96f603635e7"
+PACKAGE_ARCH = "all"
 
 inherit autotools 
 
