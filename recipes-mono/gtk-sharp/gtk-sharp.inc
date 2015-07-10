@@ -3,6 +3,7 @@ DESCRIPTION = "GTK+ bindings for Mono"
 SECTION = "devel/mono"
 BUGTRACKER = "http://bugzilla.xamarin.com"
 LICENSE = "LGPL-2.1"
+RDEPENDS_${PN}-dev += "perl"
 
 inherit autotools mono
 
