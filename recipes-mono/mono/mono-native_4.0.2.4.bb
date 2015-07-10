@@ -11,6 +11,10 @@ S = "${WORKDIR}/mono-4.0.2"
 
 inherit native
 
+export sysconfdir = "${exec_prefix}/etc"
+EXTRA_OECONF += " --sysconfdir=${sysconfdir}"
+FILES_${PN} = "${sysconfdir}/* ${bindir}/* ${libdir}/*.so*"
+
 do_compile() {
     make EXTERNAL_MCS="${S}/mcs/class/lib/monolite/basic.exe" EXTERNAL_RUNTIME="${S}/foo/bar/mono"
 }
