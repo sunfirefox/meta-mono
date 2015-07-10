@@ -71,4 +71,4 @@ FILES_${PN}-staticdev 			+= " ${libdir}/*.a"
 RDEPENDS_${PN} =+ "bash" 
 
 # Workaround for observed race in `make install`
-PARALLEL_MAKE=""
+PARALLEL_MAKEINST=""
