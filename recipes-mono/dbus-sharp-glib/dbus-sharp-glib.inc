@@ -4,6 +4,7 @@ SECTION = "devel/mono"
 DEPENDS = "mono dbus-sharp"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "files://COPYING;md5=ea73672fbe49f67f1c1b44a7e763dab4"
+PACKAGE_ARCH = "all"
 
 inherit autotools
 
