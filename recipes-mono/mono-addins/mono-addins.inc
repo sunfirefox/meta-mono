@@ -16,3 +16,4 @@ SRC_URI = "git://github.com/mono/mono-addins.git;branch=${SRCBRANCH}"
 S = "${WORKDIR}/git"
 
 inherit autotools-brokensep pkgconfig mono
+PACKAGE_ARCH = "all"
