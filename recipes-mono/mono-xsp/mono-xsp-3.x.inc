@@ -4,6 +4,7 @@ DEPENDS = "mono"
 RDEPENDS_${PN} = "mono"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://COPYING;md5=9e1603e27acd337015fdfa7f7ff936c7"
+PACKAGE_ARCH = "all"
 
 inherit autotools-brokensep
 
