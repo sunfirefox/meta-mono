@@ -16,3 +16,10 @@ FILES_${PN}-dev += "\
   ${libdir}/mono/gac/*/*/*.optdata \
   ${libdir}/mono/gac/*/*/*.sigdata \
 "
+
+PACKAGES += "${PN}-fsharpi"
+RDEPENDS_${PN}-fsharpi = "${PN} ${PN}-dev"
+INSANE_SKIP_${PN}-fsharpi = "dev-deps"
+FILES_${PN}-fsharpi += "\
+  ${bindir}/fsharpi* \
+"
