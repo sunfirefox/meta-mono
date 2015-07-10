@@ -16,6 +16,7 @@ SRC_URI = "git://github.com/mono/mono-addins.git;branch=${SRCBRANCH}"
 S = "${WORKDIR}/git"
 
 inherit autotools pkgconfig
+PACKAGE_ARCH = "all"
 
 FILES_${PN} += " \
   ${libdir}/mono/gac/* \
