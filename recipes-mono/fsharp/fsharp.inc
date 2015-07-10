@@ -4,6 +4,7 @@ SECTION = "devel/mono"
 DEPENDS = "mono"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "files://LICENSE;md5=512efb9375da0bd2fee9e2b9352c08af"
+PACKAGE_ARCH = "all"
 
 inherit autotools-brokensep
 
