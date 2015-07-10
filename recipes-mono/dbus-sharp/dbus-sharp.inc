@@ -5,6 +5,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "files://COPYING;md5=09d60852216ea29fdba9ea146513336c"
 
 inherit autotools mono
+PACKAGE_ARCH = "all"
 
 def dbus_sharp_download_version(d):
     pvsplit = d.getVar('PV', True).split('.')
